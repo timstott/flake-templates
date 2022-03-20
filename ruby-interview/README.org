@@ -1,0 +1,24 @@
+* Minimal Ruby environment for interviews
+A nix flake template with minimal Ruby environment suitable for interviews
+
+Features:
+- Ruby 3.1
+- Code autoloading with Zeitwek
+- Unit test with ~rspec~
+- ~bin/console~ opens a console with ~pry~ and application files
+- Gem management via /Gemfile/ and ~bundler~
+
+** Usage
+Install the template inside current directory
+
+#+begin_src
+nix flake init -t github:timstott/flake-templates#ruby-interview
+#+end_src
+
+Open the shell with the provided environment and install the dependencies with ~bundler~.
+#+begin_src
+nix develop
+$ bundle
+#+end_src
+
+Gems are managed directly with ~bundler~ instead of ~nix~ in case candidate wishes to add more.

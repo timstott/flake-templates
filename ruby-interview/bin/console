@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/main"
+
+require "pry"
+Pry.start
+
+# > add(2, 5)
+# => 5
+# > HelloWorld.new
+# => #<HelloWorld:0x00000001041a7570>
